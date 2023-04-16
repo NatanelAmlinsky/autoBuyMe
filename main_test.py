@@ -40,22 +40,22 @@ class AutoBuyMe(TestCase):
         self.test_sender_receiver_info_screen = InfoScreen(self.driver)
         self.extras = Extras(self.driver)
 
-    def test_1_registration(self):
+    def test_1_registration(self):  # run registration test
         self.registration_test.test_registration()
 
-    def test_2_home_screen(self):
+    def test_2_home_screen(self):   # run home screen test
         self.home_screen_test.test_pick_info()
 
-    def test_3_pick_business(self):
+    def test_3_pick_business(self): # run pick business test
         self.pick_business_test.test_pick_business()
 
-    def test_4_sender_receiver_info_screen(self):
+    def test_4_sender_receiver_info_screen(self): # run sender receiver information screen test
         self.test_sender_receiver_info_screen.test_info_screen()
 
-    def test_5_extras(self):
+    def test_5_extras(self):    # run extras module test
         self.extras.test_home_screen_error()
         self.extras.test_screenshot_buttom_of_page()
 
-    def tearDown(self):
+    def tearDown(self): # quiting from the web driver
         self.driver.quit()
 
