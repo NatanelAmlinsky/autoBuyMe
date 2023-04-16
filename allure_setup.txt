@@ -1,0 +1,20 @@
+# Mac users:
+brew install allure
+
+# Windows users (https://scoop.sh/)
+scoop install allure
+
+# Python install
+poetry add allure-pytest OR $ pip install allure-pytest
+
+# generate allure report folder
+allure generate
+
+# Run all tests and add to report
+pytest --alluredir=allure-reports
+
+# Run a specific tests folder and add to report
+pytest my_folder/ --alluredir=allure-reports
+
+# Run Allure server
+allure serve allure-report/

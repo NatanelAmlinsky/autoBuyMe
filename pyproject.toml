@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "autobuyme"
+version = "0.1.0"
+description = ""
+authors = ["NatanelAmlinsky <natanel.amlinsky@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+selenium = "^4.8.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
