@@ -11,7 +11,7 @@ class PickBusiness(BasePage):
         url = self.get_current_url()
         the_website_url = "https://buyme.co.il/search?budget=6&category=85&region=13"
         self.wait_for_url(the_website_url)
-        assert url == the_website_url
+        assert url == the_website_url   # check if the url is the same like we got
         self.click_element(By.XPATH, "(//div[@class='bottom'])[10]")
         self.enter_text(By.XPATH, "//*[@placeholder='הכנס סכום']", "650")
         self.click_element(By.XPATH, "(//div[@class='mx-12 money-btn'])[1]")
